@@ -1,7 +1,7 @@
 import { Stack, Box, Typography } from '@mui/material';
 
-import { icons } from '../utils/constants';
-// import ManageAccountsSharpIcon from '@mui/icons-material/ManageAccountsSharp';
+import { SidebarToggleBtn, AccountSettings } from './index';
+
 
 
 const Navbar = () => (
@@ -27,20 +27,16 @@ const Navbar = () => (
             color: 'white',
             flex: 2
         }}
-
         >
-            <Typography>
-                <span>Accountant</span>
+            <Typography variant='h5'>
+                <span style={{ textAlign: 'center', display: 'block' }}>Accountant</span>
             </Typography>
         </Box>
         <Box sx={{
             color: 'white'
         }}
         >
-            <ManageAccountsSharpIcon
-                sx={{
-                    cursor: 'pointer'
-                }} />
+            <AccountSettings />
         </Box>
     </Stack>
 

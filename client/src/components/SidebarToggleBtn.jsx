@@ -1,8 +1,10 @@
-import React from 'react';
+import { icons } from "../utils/constants";
 
 const SidebarToggleBtn = () => (
 
-    <div>SidebarToggleBtn</div>
+    <div>
+        {icons.menu}
+    </div>
 
 );
 
