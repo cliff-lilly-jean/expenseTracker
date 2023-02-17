@@ -1,6 +1,9 @@
-// import { AccountCircleSharpIcon } from '@mui/icons-material';
+
+import ManageAccountsSharpIcon from '@mui/icons-material/ManageAccountsSharp';
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 
 // Icons
-export const ICONS = {
-    // account: <AccountCircleSharpIcon />
-};
+export const icons = [
+    { account: <ManageAccountsSharpIcon /> },
+    { menu: <MenuSharpIcon /> }
+];

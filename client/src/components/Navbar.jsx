@@ -1,24 +1,46 @@
 import { Stack, Box, Typography } from '@mui/material';
 
-// import { AccountCircleSharpIcon } from '../utils/constants';
+import { icons } from '../utils/constants';
+// import ManageAccountsSharpIcon from '@mui/icons-material/ManageAccountsSharp';
+
 
 const Navbar = () => (
     <Stack
-        direction={'row'}
+        direction={{ sm: 'row' }}
+        spacing={2}
+        alignItems={'center'}
+        sx={{
+            height: 'auto',
+            backgroundColor: '#222',
+            padding: '1rem'
+
+        }}
     >
         <Box sx={{
-            width: 100,
-            height: '100vh',
-            backgroundColor: 'red'
+            height: 'auto',
+            color: 'white'
+
         }}>
-        // SidebarToggleBtn
+            <SidebarToggleBtn />
         </Box>
-        <Box>
-        // App name
+        <Box sx={{
+            color: 'white',
+            flex: 2
+        }}
+
+        >
+            <Typography>
+                <span>Accountant</span>
+            </Typography>
         </Box>
-        <Box>
-        // ThemeToggleBtn
-            {/* <AccountCircleSharpIcon /> */}
+        <Box sx={{
+            color: 'white'
+        }}
+        >
+            <ManageAccountsSharpIcon
+                sx={{
+                    cursor: 'pointer'
+                }} />
         </Box>
     </Stack>
 
