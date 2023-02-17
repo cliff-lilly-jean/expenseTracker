@@ -1,8 +1,7 @@
 import { Stack, Box, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 import { SidebarToggleBtn, AccountSettings } from './index';
-
-
 
 const Navbar = () => (
     <Stack
@@ -21,7 +20,10 @@ const Navbar = () => (
             color: 'white'
 
         }}>
-            <SidebarToggleBtn />
+            <Link to="/" >
+                <SidebarToggleBtn />
+            </Link>
+
         </Box>
         <Box sx={{
             color: 'white',
